@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 10px 'Inter', sans-serif;
+    /* Change the font-family to 'Inter' */
+    color: white;
+}
+
+#pageWrapper {
+    margin: 0;
+}
+
+#pageWrapper .statBox {
+    min-width: 275px;
+    max-width: fit-content;
+    margin: .5rem;
+    padding: .75rem;
+    border: .1vw solid #363c42;
+    border-radius: .5rem;
+    background: #24272c;
+    /* Replace 'your-image-url.jpg' with the URL of your desired image */
+    background-size: cover;
+    /* Adjusts the size of the background image to cover the entire element */
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: -1px 1px #000, -1px 1px 3px #000;
+}
+
+h2 #channel-name {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font: 10px 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 0.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #000;
+}
+
+h2 span {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font: 10px 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 0.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #000;
+}
+
+h2 #channel-name {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font: 10px 'Inter', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 0.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #000;
+}
+
+h2 #channel-live {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font: 10px 'Kick Font', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 1000;
+    line-height: 0.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #000;
+}
+
+div .sessionTime {
+    margin: 0 0 1.5rem 0;
+    line-height: 0.1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-shadow: -1px 1px 2px #000;
+}
+
+p {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-shadow: -1px 1px 3px #000;
+}
+
+p span {
+    margin-left: auto;
+    /*font-weight: 600;*/
+}
+
+p.topChatters {
+    margin: 1.5rem 0 .5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+#channel-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+}
+
+#channel-live.live {
+    color: #3cd803;
+    filter: drop-shadow(0 0 15px #3cd803);
+}
+
+#channel-live.live::before {
+    font-size: .9em;
+    padding: 0 1px;
+    content: "🟢";
+    position: relative;
+    top: -2px;
+    /* Adjust the vertical position */
+}
+
+#channel-live.offline {
+    color: #D80303;
+    filter: drop-shadow(0 0 15px #D80303);
+}
+
+#channel-live.offline::before {
+    font-size: .9em;
+    padding: 0 1px;
+    content: "🔴";
+    position: relative;
+    top: -2px;
+    /* Adjust the vertical position */
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    counter-reset: list-item;
+}
+
+li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-shadow: -1px 1px 3px #000;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+li span {
+    font-weight: 600;
+}
+
+li::before {
+    content: "#" counter(list-item)"\a0\a0";
+    counter-increment: list-item;
+}
+
+li span.messageCount {
+    padding-left: 2em;
+    margin-left: auto;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}

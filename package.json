@@ -1,0 +1,22 @@
+{
+  "name": "streamerstats",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.5",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mysql": "^2.18.1",
+    "sqlstring": "^2.3.3"
+  },
+  "type": "module"
+}

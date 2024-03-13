@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <title>Kick Chat Statistics Overlay</title>
+</head>
+
+<body>
+
+    <div id="pageWrapper">
+        <div class="statBox">
+            <h2><span id="channel-live"></span> <span id="channel-name"></span></h2>
+            <div class="sessionTime">Session Uptime: <span id="session-duration"></span></div>
+            <p>Live Viewers: <span id="viewer-count"></span></p>
+            <p>Peak Viewers: <span id="viewer-peak"></span></p>
+            <p>Average Viewers: <span id="viewer-average"></span></p>
+            <p>Total Message Count: <span id="message-count">0</span></p>
+            <p>Unique Chatters: <span id="unique-usernames">0</span></p>
+            <p>Chatters &lt; 3 Msgs: <span id="2x-usernames">0</span></p>
+            <p class="topChatters">Top Chatters:</p>
+            <ul id="top-usernames"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="js/chatStatistics.js"></script>
+    <script type="module" src="js/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
