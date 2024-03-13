@@ -1,7 +1,7 @@
 import { setSessionStartTime, calculateSessionDuration } from "./timer.js";
 
 const urlParams = new URLSearchParams(window.location.search);
-let channel = urlParams.get("channel") || "iziprime";
+let channel = urlParams.get("channel") || "pamk";
 const topListLength = urlParams.get("listLength") || 5;
 
 let messageCount = 0;
